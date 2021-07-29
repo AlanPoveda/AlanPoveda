@@ -1,7 +1,7 @@
 ## Hey, welcome to my profile 👋
 
-* 👾 Focus programin JavaScript and Python 
-* 🎉 I’m looking to collaborate on ... Web Programin and mobile 
+* 👾 Focus programin Java
+* 🎉 I’m looking to collaborate on ... Web Programin
 * 😄 Pronouns: Colombia kkkk
 * ⚡ Fun fact: I'm addicted to https://www.codewars.com/users/AlanPoveda
 * 🏬 Linkeding profile:  https://www.linkedin.com/in/alan-poveda-a8a4b7b5/

@@ -1,8 +1,7 @@
-## Hey, welcome to my profile 👋
+## Hello! 👋
 
-* 👾 Focus programin Java
-* 🎉 I’m looking to collaborate on ... Web Programin
-* 😄 Pronouns: Colombia kkkk
+My name is Alan Poveda, I'm 25 years old and i'm very passionated for tecnology. I have experiencie in Facebook Ads, instagram marketing, tecnical degree in Administration degree. Working in bussines to custumer service, and website maintenance.
+
 * ⚡ Fun fact: I'm addicted to https://www.codewars.com/users/AlanPoveda
 * 🏬 Linkeding profile:  https://www.linkedin.com/in/alan-poveda-a8a4b7b5/
 

@@ -7,5 +7,5 @@ My name is Alan Poveda, I'm 25 years old and i'm very passionated for tecnology.
 
 
 [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=AlanPoveda&count_private=true&theme=tokyonight&showicons=true)]()
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=alanpoveda&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=alanpoveda&layout=compact&theme=tokyonight&showicons=true)](https://github.com/anuraghazra/github-readme-stats)
 

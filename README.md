@@ -2,7 +2,7 @@
 
 My name is Alan Poveda, I'm 26 years old and i'm very passionated for tecnology. 💻
 
-() => 'Front-end" 
+() => 'Front-end" &&
 fn -> "Back-end" end
 
 

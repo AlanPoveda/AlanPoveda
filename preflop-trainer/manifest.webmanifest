@@ -1,0 +1,16 @@
+{
+  "name": "Preflop Trainer 6-max",
+  "short_name": "Preflop",
+  "description": "Treinador de pré-flop 6-max: open raise (RFI), 3-bet/call/fold vs raise e grid de ranges.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a1610",
+  "theme_color": "#0d1f16",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

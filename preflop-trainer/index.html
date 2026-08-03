@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Preflop Trainer · 6-max</title>
+  <meta name="description" content="Treinador de pré-flop 6-max: ranges de open raise (RFI), 3-bet/call/fold vs raise e grid interativo." />
+
+  <!-- PWA / "cara de app" no celular -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0d1f16" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Preflop" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-suit">♠</span>
+      <div>
+        <h1>Preflop Trainer</h1>
+        <p class="brand-sub">6-max · cash 100bb</p>
+      </div>
+    </div>
+    <button id="statsToggle" class="icon-btn" title="Estatísticas" aria-label="Estatísticas">📊</button>
+  </header>
+
+  <!-- Barra de estatísticas -->
+  <section id="statsBar" class="stats-bar">
+    <div class="stat"><span class="stat-num" id="statAccuracy">—</span><span class="stat-label">Acerto</span></div>
+    <div class="stat"><span class="stat-num" id="statStreak">0</span><span class="stat-label">Sequência</span></div>
+    <div class="stat"><span class="stat-num" id="statBest">0</span><span class="stat-label">Recorde</span></div>
+    <div class="stat"><span class="stat-num" id="statHands">0</span><span class="stat-label">Mãos</span></div>
+    <button id="resetStats" class="link-btn">zerar</button>
+  </section>
+
+  <!-- Navegação de modos -->
+  <nav class="tabs">
+    <button class="tab active" data-mode="rfi">Open Raise</button>
+    <button class="tab" data-mode="facing">Vs Raise</button>
+    <button class="tab" data-mode="grid">Grid</button>
+  </nav>
+
+  <main>
+    <!-- ===================== MODO QUIZ (RFI + Facing) ===================== -->
+    <section id="quizView">
+      <div class="scenario" id="scenario">
+        <div class="scenario-line" id="scenarioPos">—</div>
+        <div class="scenario-sub" id="scenarioSub">—</div>
+      </div>
+
+      <div class="cards" id="cards"><!-- cartas injetadas via JS --></div>
+      <div class="hand-label" id="handLabel">—</div>
+
+      <div class="actions" id="actions"><!-- botões injetados via JS --></div>
+
+      <div class="feedback" id="feedback" hidden>
+        <div class="feedback-head" id="feedbackHead">—</div>
+        <div class="feedback-detail" id="feedbackDetail">—</div>
+        <div class="mini-grid-wrap">
+          <div class="mini-grid" id="miniGrid"></div>
+          <div class="mini-legend" id="miniLegend"></div>
+        </div>
+        <button class="btn primary next-btn" id="nextBtn">Próxima mão →</button>
+      </div>
+    </section>
+
+    <!-- ===================== MODO GRID (consulta) ===================== -->
+    <section id="gridView" hidden>
+      <div class="grid-controls">
+        <label for="gridSelect">Range:</label>
+        <select id="gridSelect"></select>
+        <span class="grid-pct" id="gridPct"></span>
+      </div>
+      <div class="big-grid" id="bigGrid"></div>
+      <div class="mini-legend" id="gridLegend"></div>
+      <p class="grid-hint">Diagonal = pares · triângulo superior = suited · inferior = offsuit</p>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Ranges de <strong>estudo</strong> simplificados (uma ação por mão). Solvers reais usam frequências mistas. Use como guia de fundamentos, não como verdade absoluta.</p>
+  </footer>
+
+  <!-- Aviso de instalação PWA (Android/desktop) -->
+  <div id="installPrompt" class="install-prompt" hidden>
+    <span>📲 Instalar como app</span>
+    <button id="installBtn" class="btn small">Instalar</button>
+    <button id="installDismiss" class="icon-btn" aria-label="Fechar">✕</button>
+  </div>
+
+  <script src="ranges.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
